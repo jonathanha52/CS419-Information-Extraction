@@ -3,13 +3,14 @@ from textblob import Word
 from nltk.stem import WordNetLemmatizer
 # use this line to download nltk.wordnet
 # nltk.download('wordnet')
-wordnet_lemmatizer = WordNetLemmatizer()
+
 
 # lemmatizer_type = "wordnet" -> WordNetlemmatizer, "textblob" -> TextBlobLemmatizer
 # pos = "a" -> adj, "n" -> noun, "v" -> verb
 
 
 def lemmatize(list_word, lemmatizer_type, pos):
+    wordnet_lemmatizer = WordNetLemmatizer()
     result = []
     if lemmatizer_type == "wordnet" and pos == "a":
         for word in list_word:
