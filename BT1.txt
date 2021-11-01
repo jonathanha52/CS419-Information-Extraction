@@ -1,0 +1,11 @@
+Thành viên nhóm:
+18520914 Hà Thúc Đăng Khoa
+18520916 Huỳnh Lữ Anh Khoa
+
+Do dung lượng của file lớn nên nhóm em xin phép nộp qua link google drive.
+Trên drive này có báo cáo và 2 file chứa thông tin IDF cũng như vector của văn băn.
+Nhóm em xin tự ý đỔi qua định dạng CSV để dễ xem hơn
+Em xin cảm ơn
+
+Link Drive: https://docs.google.com/document/d/1pQMSRiTbiXf0Djp_2gmT4Mtjs986MiIUJuL8Rp_SgtA/edit?usp=sharing 
+Link source code: https://github.com/jonathanha52/CS419-Information-Extraction
