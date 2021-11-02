@@ -11,6 +11,10 @@ import nltk
 
 
 def get_wordnet_pos(sentence):
+    try:
+        nltk.data.find("corpora\wordnet.zip")
+    except LookupError:
+        nltk.download("wordnet")
     tag_dict = {"J": wordnet.ADJ,
                 "N": wordnet.NOUN,
                 "V": wordnet.VERB,
