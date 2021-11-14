@@ -1,17 +1,16 @@
 import sys
 import os
 sys.path.append(os.path.abspath("E:\\UIT\\InformationExtraction\\Github\\CS419-Information-Extraction"))
-import timeit
-import nltk.data
+from src.preprocess.tokenize import *
+from src.utilities.load_from_folder import load_json
+import src.preprocess.lemmatizing as lemmatizing
+from typing_extensions import runtime
+from nltk import tokenize
 import nltk
+import nltk.data
+import timeit
 # nltk.download('punkt')
 # nltk.download('averaged_perceptron_tagger')
-from nltk import tokenize
-from typing_extensions import runtime
-import src.preprocess.lemmatizing as lemmatizing
-from src.utilities.load_from_folder import load_json
-from src.preprocess.tokenize import *
-
 
 def time_evaluate(lemmatizer_type):
     data_path = "datasets\\processed\\cran"
@@ -36,7 +35,6 @@ def time_evaluate(lemmatizer_type):
                 f.write("\n")
             f.write("\n")
     f.close()
-
 
 if __name__ == "__main__":
     run_time = timeit.timeit("time_evaluate('wordnet')",globals=locals(), number=1)
