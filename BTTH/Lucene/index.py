@@ -34,6 +34,7 @@ class LuceneIndexer:
         self.writer.close()
         print("Index completed")
 
-index = LuceneIndexer()
-path = "datasets/processed/cran/*.json"
-index.addIndex(path)
+if __name__ == "__main__":
+    index = LuceneIndexer()
+    path = "datasets/processed/cran/*.json"
+    index.addIndex(path)
